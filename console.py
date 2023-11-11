@@ -109,8 +109,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
-        Displaying the string's representation of a class's instance of
-        the a given id.
+        Displays the string's representation of a class's instance of a given id.
         """
         argll = parse(arg)
         objdictt = storage.all()
@@ -144,10 +143,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_all(self, arg):
         """Usage: all or all <class> or <class>.all()
-        Displaying the string's representations of all its instances of the
-        class given.
-        If the class isn't specified, then displays all the instantiated
-        objects."""
+        Displays the string's representations of all the instances of the class given.
+        If there is no class specified, displays all the instantiated objects."""
         argll = parse(arg)
         if len(argll) > 0 and argll[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
@@ -162,7 +159,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_count(self, arg):
         """Usage: count <class> or <class>.count()
-        Retrieves the number of the instances of the class given."""
+        Retrieves all the number of the instances of the class given."""
         argll = parse(arg)
         countt = 0
         for objt in storage.all().values():
@@ -174,8 +171,8 @@ class HBNBCommand(cmd.Cmd):
         """Usage: update <class> <id> <attribute_name> <attribute_value> or
        <class>.update(<id>, <attribute_name>, <attribute_value>) or
        <class>.update(<id>, <dictionary>)
-        Updates the class's instance of the id given by adding or by updating
-        the attribute's key/value pair or dictionary given."""
+        Updates a class's instance of the given id by adding or by updating
+        a given attribute's key/value pair or dictionary."""
         argll = parse(arg)
         objdictt = storage.all()
 
@@ -185,11 +182,11 @@ class HBNBCommand(cmd.Cmd):
         if argll[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
             return False
-        if "{}.{}".format(argll[0], argll[1]) not in objdictt.keys():
-            print("** no instance found **")
-            return False
         if len(argll) == 1:
             print("** instance id missing **")
+            return False
+        if "{}.{}".format(argll[0], argll[1]) not in objdictt.keys():
+            print("** no instance found **")
             return False
         if len(argll) == 2:
             print("** attribute name missing **")

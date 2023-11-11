@@ -34,16 +34,16 @@ class TestUser_instantiation(unittest.TestCase):
         self.assertEqual(datetime, type(User().updated_at))
 
     def testing_email_is_public_str(self):
-        self.assertEqual(str, type(User.email))
+        self.assertEqual(str, type(User.emaill))
 
     def testing_password_is_public_str(self):
-        self.assertEqual(str, type(User.password))
+        self.assertEqual(str, type(User.passwrdd))
 
     def testing_first_name_is_public_str(self):
-        self.assertEqual(str, type(User.first_name))
+        self.assertEqual(str, type(User.the_first_name))
 
     def testing_last_name_is_public_str(self):
-        self.assertEqual(str, type(User.last_name))
+        self.assertEqual(str, type(User.the_last_name))
 
     def testing_two_users_unique_ids(self):
         us11 = User()

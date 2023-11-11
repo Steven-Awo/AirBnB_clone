@@ -40,9 +40,9 @@ class TestState_instantiation(unittest.TestCase):
 
     def testing_name_is_public_class_attribute(self):
         stte = State()
-        self.assertEqual(str, type(State.name))
-        self.assertIn("name", dir(stte))
-        self.assertNotIn("name", stte.__dict__)
+        self.assertEqual(str, type(State.namme))
+        self.assertIn("namme", dir(stte))
+        self.assertNotIn("namme", stte.__dict__)
 
     def testing_two_states_unique_ids(self):
         st11 = State()

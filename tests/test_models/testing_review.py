@@ -40,21 +40,21 @@ class TestReview_instantiation(unittest.TestCase):
 
     def testing_place_id_is_public_class_attribute(self):
         rvv = Review()
-        self.assertEqual(str, type(Review.place_id))
-        self.assertIn("place_id", dir(rvv))
-        self.assertNotIn("place_id", rvv.__dict__)
+        self.assertEqual(str, type(Review.placee_id))
+        self.assertIn("placee_id", dir(rvv))
+        self.assertNotIn("placee_id", rvv.__dict__)
 
     def testing_user_id_is_public_class_attribute(self):
         rvv = Review()
-        self.assertEqual(str, type(Review.user_id))
-        self.assertIn("user_id", dir(rvv))
-        self.assertNotIn("user_id", rvv.__dict__)
+        self.assertEqual(str, type(Review.userr_id))
+        self.assertIn("userr_id", dir(rvv))
+        self.assertNotIn("userr_id", rvv.__dict__)
 
     def testing_text_is_public_class_attribute(self):
         rvv = Review()
-        self.assertEqual(str, type(Review.text))
-        self.assertIn("text", dir(rvv))
-        self.assertNotIn("text", rvv.__dict__)
+        self.assertEqual(str, type(Review.textt))
+        self.assertIn("textt", dir(rvv))
+        self.assertNotIn("textt", rvv.__dict__)
 
     def testing_two_reviews_unique_ids(self):
         rv11 = Review()

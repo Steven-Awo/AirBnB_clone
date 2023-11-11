@@ -40,69 +40,69 @@ class TestPlace_instantiation(unittest.TestCase):
 
     def testing_city_id_iss_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(str, type(Place.city_id))
-        self.assertIn("city_id", dir(pll))
-        self.assertNotIn("city_id", pll.__dict__)
+        self.assertEqual(str, type(Place.cityy_id))
+        self.assertIn("cityy_id", dir(pll))
+        self.assertNotIn("cityy_id", pll.__dict__)
 
     def testing_user_id_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(str, type(Place.user_id))
-        self.assertIn("user_id", dir(pll))
-        self.assertNotIn("user_id", pll.__dict__)
+        self.assertEqual(str, type(Place.userr_id))
+        self.assertIn("userr_id", dir(pll))
+        self.assertNotIn("userr_id", pll.__dict__)
 
     def testing_name_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(str, type(Place.name))
-        self.assertIn("name", dir(pll))
-        self.assertNotIn("name", pll.__dict__)
+        self.assertEqual(str, type(Place.namme))
+        self.assertIn("namme", dir(pll))
+        self.assertNotIn("namme", pll.__dict__)
 
     def testing_description_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(str, type(Place.description))
-        self.assertIn("description", dir(pll))
-        self.assertNotIn("desctiption", pll.__dict__)
+        self.assertEqual(str, type(Place.descriptionn))
+        self.assertIn("descriptionn", dir(pll))
+        self.assertNotIn("desctiptionn", pll.__dict__)
 
     def testing_number_rooms_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(int, type(Place.number_rooms))
-        self.assertIn("number_rooms", dir(pll))
-        self.assertNotIn("number_rooms", pll.__dict__)
+        self.assertEqual(int, type(Place.numb_of_rooms))
+        self.assertIn("numb_of_rooms", dir(pll))
+        self.assertNotIn("numb_of_rooms", pll.__dict__)
 
     def testing_number_bathrooms_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(int, type(Place.number_bathrooms))
-        self.assertIn("number_bathrooms", dir(pll))
-        self.assertNotIn("number_bathrooms", pll.__dict__)
+        self.assertEqual(int, type(Place.numb_of_bathrooms))
+        self.assertIn("numb_of_bathrooms", dir(pll))
+        self.assertNotIn("numb_of_bathrooms", pll.__dict__)
 
     def testing_max_guest_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(int, type(Place.max_guest))
-        self.assertIn("max_guest", dir(pll))
-        self.assertNotIn("max_guest", pll.__dict__)
+        self.assertEqual(int, type(Place.max_of_guest))
+        self.assertIn("max_of_guest", dir(pll))
+        self.assertNotIn("max_of_guest", pll.__dict__)
 
     def testing_price_by_night_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(int, type(Place.price_by_night))
-        self.assertIn("price_by_night", dir(pll))
-        self.assertNotIn("price_by_night", pll.__dict__)
+        self.assertEqual(int, type(Place.price_for_a_night))
+        self.assertIn("price_for_a_night", dir(pll))
+        self.assertNotIn("price_for_a_night", pll.__dict__)
 
     def testing_latitude_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(float, type(Place.latitude))
-        self.assertIn("latitude", dir(pll))
-        self.assertNotIn("latitude", pll.__dict__)
+        self.assertEqual(float, type(Place.latitudee))
+        self.assertIn("latitudee", dir(pll))
+        self.assertNotIn("latitudee", pll.__dict__)
 
     def testing_longitude_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(float, type(Place.longitude))
-        self.assertIn("longitude", dir(pll))
-        self.assertNotIn("longitude", pll.__dict__)
+        self.assertEqual(float, type(Place.longitudee))
+        self.assertIn("longitudee", dir(pll))
+        self.assertNotIn("longitudee", pll.__dict__)
 
     def testing_amenity_ids_is_public_class_attribute(self):
         pll = Place()
-        self.assertEqual(list, type(Place.amenity_ids))
-        self.assertIn("amenity_ids", dir(pll))
-        self.assertNotIn("amenity_ids", pll.__dict__)
+        self.assertEqual(list, type(Place.amenityy_ids))
+        self.assertIn("amenityy_ids", dir(pll))
+        self.assertNotIn("amenityy_ids", pll.__dict__)
 
     def testing_two_places_unique_ids(self):
         pl1 = Place()

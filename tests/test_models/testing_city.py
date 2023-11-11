@@ -40,15 +40,15 @@ class TestCity_instantiation(unittest.TestCase):
 
     def testing_state_id_is_public_class_attribute(self):
         cyy = City()
-        self.assertEqual(str, type(City.state_id))
-        self.assertIn("state_id", dir(cyy))
-        self.assertNotIn("state_id", cyy.__dict__)
+        self.assertEqual(str, type(City.statee_id))
+        self.assertIn("statee_id", dir(cyy))
+        self.assertNotIn("statee_id", cyy.__dict__)
 
     def testing_name_is_public_class_attribute(self):
         cyy = City()
-        self.assertEqual(str, type(City.name))
-        self.assertIn("name", dir(cyy))
-        self.assertNotIn("name", cyy.__dict__)
+        self.assertEqual(str, type(City.namme))
+        self.assertIn("namme", dir(cyy))
+        self.assertNotIn("namme", cyy.__dict__)
 
     def testing_two_cities_unique_ids(self):
         cy11 = City()
