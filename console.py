@@ -126,7 +126,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_destroy(self, arg):
         """Usage: destroy <class> <id> or <class>.destroy(<id>)
-        Deleting a class's instance of the id given."""
+        Deletes a class's instance of the given id."""
         argll = parse(arg)
         objdictt = storage.all()
         if len(argll) == 0:
