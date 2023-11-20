@@ -1,0 +1,80 @@
+/************/
+/* resets the css */
+/************/
+
+*{
+	margin: 0;
+	border: none;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+}
+
+/*************/
+/* common for the styles */
+/*************/
+
+html {
+	box-sizing: border-box;
+}
+
+/*********/
+/* mobile for the first resposive */
+/*********/
+
+/* Extra small sized devices (phones, 600px, and down) */
+/* @media for only screen and the (max-width: 600px) */
+
+body {
+	font-size: 14px;
+	width: 100%;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #484848;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+span {
+	color: #000000;
+}
+
+.container {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	margin: 2rem auto;
+}
+
+/********/
+/* index
+/********/
+.container {
+	z-index: 0;
+}
+
+.div_price_by_night {
+	z-index: 10;
+}
+* {
+	z-index: inherit;
+}
+
+/* Small sized devices (portrait for tablets and for large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium sized devices (landscape of tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large sized devices (laptops or desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	body {
+		margin: 0 auto;
+		max-width: 1920px;
+	}
+}
