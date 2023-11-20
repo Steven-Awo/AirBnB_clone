@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small sized devices (portrait of tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium sized devices (landscape of the tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large sized devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+footer {
+	background-color: #FFF;
+	clear: left;
+	height: 60px;
+	border-top: 1px solid #CCCCCC;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer p {
+	color: #484848;
+	text-align: center;
+}
