@@ -1,4 +1,5 @@
 .filters {
+<<<<<<< HEAD
   display: none;
 }
 @media only screen and (max-width: 600px) {
@@ -18,10 +19,36 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+=======
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small sized devices (portrait of tablets and  for large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium sized devices (landscape of tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  .filters {
+    height: 70px;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
   }
 
   button {
     font-size: 18px;
+<<<<<<< HEAD
     background-color: #FF5A5F;
     color: #FFF;
     height: 48px;
@@ -31,6 +58,17 @@
     border-radius: 4px;
     margin: auto 30px auto auto;
     align-self: center;
+=======
+    color: #FFF;
+    background-color: #FF5A5F;
+    height: 48px;
+    width: 20%;
+    margin: auto 30px auto auto;
+    max-width: 220px;
+    align-self: center;
+    border: none;
+    border-radius: 4px;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
   }
 
   button:hover {
@@ -40,6 +78,7 @@
 
   .locations,
   .amenities {
+<<<<<<< HEAD
     height: 100%;
     width: 25%;
     /* display: inline-block;
@@ -51,16 +90,35 @@
 
   .locations {
     border-right: 1px solid #DDDDDD;
+=======
+	  height: 100%;
+	  width: 25%;
+	  /* display: inline-block;
+          vertical-align: left; */
+	  justify-content: center;
+	  position: relative;
+	  flex-direction: column;
+  }
+
+  .locations {
+	  border-right: 1px solid #DDDDDD;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
   }
 
   .locations h3,
   .amenities h3{
+<<<<<<< HEAD
     font-weight: 600;
     margin: 1em 0 auto 30px;
+=======
+	  font-weight: 600;
+	  margin: 1em 0 auto 30px;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
   }
 
   .locations h4,
   .amenities h4 {
+<<<<<<< HEAD
     font-weight: 400;
     font-size: 14px;
     margin: auto 0 auto 30px;
@@ -102,18 +160,72 @@ article:focus {
   .popover h2 {
     font-size: 16px;
     margin: 5px auto 5px auto;
+=======
+	  font-weight: 400;
+	  margin: auto 0 auto 30px;
+	  font-size: 14px;
+  }
+
+/* Focus for ARIA accesibility */
+
+.locations:focus,
+.amenities:focus {
+	background-color: antiquewhite;
+}
+
+article:focus {
+	background-color: antiquewhite;
+}
+
+  /* ======= */
+  /* dropdown THE menu */
+  /* ========= */
+
+  .popover {
+	  border-radius: 4px;
+	  padding: 20px 20px 20px 20px;
+	  border: 1px solid #DDDDDD;
+	  display: none;
+	  margin: 17px 0 0 0;
+	  background-color: #FAFAFA;
+  }
+
+  .popover ul {
+	  margin-left: 10px;
+  }
+
+  ul > ul {
+	  padding: 0;
+  }
+  .popover li{
+	  list-style-type: none;
+  }
+
+  .popover h2 {
+	  font-size: 16px;
+	  margin: 5px auto 5px auto;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
   }
 
   /* drop down on hover */
 
   .locations:hover,
   .amenities:hover {
+<<<<<<< HEAD
     cursor: pointer;
   }
 
   .locations:hover .popover {
     display: block;
     cursor: pointer;
+=======
+	cursor: pointer;
+  }
+
+  .locations:hover .popover {
+	display: block;
+	cursor: pointer;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
   }
 
   .amenities:hover .popover {
@@ -122,7 +234,11 @@ article:focus {
   }
 
 }
+<<<<<<< HEAD
 /* Large devices (laptops/desktops, 992px and up) */
+=======
+/* Large sized devices (laptops/desktops, 992px and up) */
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
 @media only screen and (min-width: 992px) {
 
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /****************************************************************************/
 /* reset css */
 /****************************************************************************/
@@ -56,5 +57,73 @@ span {
 	body {
 		max-width: 1920px;
 		margin: 0 auto;
+=======
+/*****/
+/* resets the css */
+/******/
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	border: none;
+	outline: none;
+}
+
+/**********/
+/* the styles that are common */
+/**********/
+
+html {
+	box-sizing: border-box;
+}
+
+/*********/
+/* mobile for the first resposive */
+/*********/
+
+/* Extra the small devices (phones,and ,600px and down) */
+/* @media only for screen and (max-width: 600px) */
+
+body {
+	z-index: 0;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	width: 100%;
+	color: #484848;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+}
+
+span {
+	color: #000000;
+}
+
+.container {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	margin: 2rem auto;
+}
+
+/* Small size devices */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium size devices (landscape of the tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large size devices (laptops or desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	body {
+		margin: 0 auto;
+		max-width: 1920px;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
 	}
 }

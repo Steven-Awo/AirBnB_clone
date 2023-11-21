@@ -1,4 +1,5 @@
 .filters {
+<<<<<<< HEAD
   display: none;
 }
 @media only screen and (max-width: 600px) {
@@ -114,6 +115,128 @@
 
 }
 /* Large devices (laptops/desktops, 992px and up) */
+=======
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small size of devices (portrait for tablets and for large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium size of devices (landscape of tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.filters {
+		border: 1px solid #DDDDDD;
+		height: 70px;
+		width: 100%;
+		border-radius: 4px;
+		display: flex;
+		box-sizing: border-box;
+		align-items: center;
+	}
+
+	button {
+		background-color: #FF5A5F;
+		font-size: 18px;
+		color: #FFF;
+		margin: auto 30px auto auto;
+		height: 48px;
+		border: none;
+		width: 20%;
+		max-width: 220px;
+		border-radius: 4px;
+		align-self: center;
+	}
+
+	button:hover {
+		opacity: .9;
+		cursor: pointer;
+	}
+
+	.locations,
+	.amenities {
+		height: 100%;
+		width: 25%;
+		/* display: inline-block;
+		vertical-align: left; */
+		position: relative;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.locations {
+		border-right: 1px solid #DDDDDD;
+	}
+
+	.locations h3,
+	.amenities h3{
+		margin: 1em 0 auto 30px;
+		font-weight: 600;
+	}
+
+	.locations h4,
+	.amenities h4 {
+		font-weight: 400;
+		margin: auto 0 auto 30px;
+		font-size: 14px;
+	}
+
+	/* ======= */
+	/* dropdown the menu */
+	/* ======= */
+
+	.popover {
+		border-radius: 4px;
+		background-color: #FAFAFA;
+		border: 1px solid #DDDDDD;
+		padding: 20px 20px 20px 20px;
+		margin: 17px 0 0 0;
+		display: none;
+		margin: 17px 0 0 0;
+	}
+
+	.popover ul {
+		margin-left: 10px;
+	}
+
+	ul > ul {
+		padding: 0;
+	}
+
+	.popover li{
+		list-style-type: none;
+	}
+
+	.popover h2 {
+		font-size: 16px;
+		margin: 5px auto 5px auto;
+	}
+
+	/* drops down when hover */
+
+	.locations:hover,
+	.amenities:hover {
+		cursor: pointer;
+	}
+
+	.locations:hover .popover {
+		display: block;
+		cursor: pointer;
+	}
+
+	.amenities:hover .popover {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+/* Large sized devices (laptops or desktops, 992px and up) */
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
 @media only screen and (min-width: 992px) {
 
 }

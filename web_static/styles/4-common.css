@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+<<<<<<< HEAD
     padding: 0;
     color: #484848;
     font-size: 14px;
@@ -11,4 +12,16 @@ body{
     max-width: 1000px;
     margin-top: 30px;
     margin-bottom: 30px;
+=======
+    	padding: 0;
+	font-size: 14px;
+	color: #484848;
+	font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+.container{
+	margin: auto;
+	max-width: 1000px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+>>>>>>> 653e38396c9b4ee4f60da9b43db0a65add2c8792
 }
